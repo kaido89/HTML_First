@@ -2,62 +2,94 @@
 <html>
 	<head>
 		<style>
-			body {
-					margin-top: 0px; 
-    				margin-bottom: 0px; 
-    				margin-left: 0px; 
-    				margin-right: 0px;
-    				
-					background-color:#CCFFFF
-				}
-				h1 {
-					color: black;
-					text-align: center;
-					background-color:#cccccc;
-					margin-top: 0px; 
-    				margin-bottom: 0px; 
-    				margin-left: 0px; 
-    				margin-right: 0px;
-				}
-				p {
-					font-family: Verdana;
-					font-size: 15 px;	
-				}
-				ul {
-    			list-style-type: none;
-    			margin: 0;
-    			padding: 0;
-    			overflow: hidden;
-    			border: 1px solid #cccccc;
-    			background-color: #ccff66;
-				}
-				li {
-    			float: left;
-				}
-				li a {
-    			display: block;
-    			color: #666;
-    			text-align: center;
-    			padding: 14px 16px;
-    			text-decoration: none;
-				}
-				li a:hover:not(.active) {
-    			background-color: #66cc33;
-				}
-				li a.active {
-    			color: white;
-    			background-color: #003300;
-				}	
+		body {
+				margin-top: 0px;
+					margin-bottom: 0px;
+					margin-left: 0px;
+					margin-right: 0px;
+
+				background-color:#CCFFFF
+			}
+
+			p {
+				font-family: Verdana;
+				font-size: 15 px;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				border: 1px solid #cccccc;
+				background-color: #ccff66;
+			}
+			li {
+				float: left;
+			}
+			li a {
+				display: block;
+				color: #666;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			li a:hover:not(.active) {
+				background-color: #66cc33;
+			}
+			li a.active {
+				color: white;
+				background-color: #003300;
+			}
+			header {
+				padding: 0.5px;
+				color: yellow;
+				background-color: 	#2F4F4F;
+				clear: left;
+				text-align: center;
+			}
+			footer {
+				position:relative;
+				padding: 0.5px;
+				color: yellow;
+				background-color: 	#2F4F4F;
+				text-align: center;
+				bottom:0px;
+			}
+			a:link {
+				color: black;
+			}
+			a:visited {
+				color: black;
+			}
+			a:hover {
+				color: black;
+			}
+			a:active {
+				color: black;
+			}
+			div#home a:link {
+				 color: yellow;
+			 }
+			 div#home a:visited {
+					 color: yellow;
+				 }
+			 div#home a:hover {
+					 color: yellow;
+				 }
+			 div#home a:active {
+					 color: yellow;
+				 }
 		</style>
 	</head>
-	
+
 	<body>
-		<h1>Family Photo Album</h1>
+		<header><h1>Family Photo Album</h1></header>
 		<ul>
   			<li><a  href="./Index.html">Home</a></li>
   			<li><a  href="./News.html">News</a></li>
   			<li><a href="./Contact.html">Contact</a></li>
   			<li><a class="active"  href="./About.html">About</a></li>
 		</ul>
+		<footer>Copyright  @ 2017 <div id="home" style="display: inline"><a href="https://github.com/kaido89">kaido89</a></div></footer>
 	</body>
 </html>
