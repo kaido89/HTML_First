@@ -1,8 +1,8 @@
 <html>
   <body>
     This game is:
-    <?php echo $_GET["game"]; ?>
+    <?php echo $_POST["game"]; ?>
     This company is:
-    <?php echo $_GET["company"]; ?>
+    <?php echo $_POST["company"]; ?>
   </body>
 </html>
