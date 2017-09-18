@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function clickCounter()
+  {
+    if(typeof(Storage)!=="undefined")
+    {
+      if(localStorage.clickcount)
+      {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      }else
+      {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " times"
+    }else
+    {
+      document.getElementById('result').innerHTML = "Sorry your browser does not support web Storage...";
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="result2"></div>
+  <script>
+  if(typeof(Storage) !== "undefined")
+  {
+    localStorage.setItem("lastname","kaido");
+    document.getElementById('result2').innerHTML = localStorage.getItem("lastname");
+  }else
+  {
+    document.getElementById('result2').innerHTML = "Sorry your browser does not support web Storage...";
+  }
+  </script>
+</body>
+<body>
+  <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+  <div id="result"></div>
+</body>
+</html>
