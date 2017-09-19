@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Count Numbers: <output id="result"></output></p>
+  <button onclick="startWorker()">Start Worker</button>
+  <button onclick="stopWorker()">Stop Worker</button>
+  <p><strong>Note:</strong> Only works after IE 10</p>
+
+  <script>
+  var w;
+
+  function startWorker()
+  {
+    if(typeof(Worker) !== "undefined")
+    {
+      w = new Worker("036-Script-19-09-2017.js");
+      w.onmessage = function(event)
+      {
+        document.getElementById("result").innerHTML = event.data;
+      };
+    }else
+    {
+      document.getElementById("result").innerHTML = "Browser not Supported"
+    }
+  }
+  function stopWorker()
+  {
+    w.terminate();
+  }
+  </script>
+</body>
+</html>
