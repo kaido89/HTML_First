@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Server Updates</h1>
+  <div id="result"></div>
+  <script>
+    if(typeof(EventSource) !== "undefined")
+    {
+      var source = new EventSource("037-Script-20-09-2017.php");
+      source.onmessage = function(event)
+      {
+        document.getElementById("result").innerHTML += event.data + "<br>";
+      };
+    }else {
+      document.getElementById("result").innerHTML = "Sorry Browser error";
+    }
+
+  </script>
