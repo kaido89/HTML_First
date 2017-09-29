@@ -1,0 +1,33 @@
+p{
+  border: 1px solid black;
+  outline-color: red;
+}
+p.dotted{
+  outline-style: dotted;
+}
+p.dashed{
+  outline-style: dashed;
+}
+p.solid{
+  outline-style: solid;
+}
+p.double1{
+  outline-style: double;
+}
+p.groove{
+  outline-style: groove;
+}
+p.ridge{
+  outline-style: ridge;
+}
+p.inset{
+  outline-style: inset;
+}
+p.outset{
+  outline-style: outset;
+}
+p.double2{
+  outline-style: double;
+  outline-color: green;
+  outline-width: 3px;
+}
