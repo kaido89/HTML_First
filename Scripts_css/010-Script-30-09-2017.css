@@ -1,0 +1,71 @@
+p.green {
+  color: green;
+}
+
+p.blue {
+  color: blue;
+}
+
+p.textcenter {
+  text-align: center;
+}
+
+p.textleft {
+  text-align: left;
+}
+
+p.textright {
+  text-align: right;
+}
+
+p.textjustify {
+  text-align: justify;
+}
+
+p.textoverline {
+  text-decoration: overline;
+}
+
+p.textlinethrough {
+  text-decoration: line-through;
+}
+
+p.textunderline {
+  text-decoration: underline;
+}
+
+p.textuppercase {
+  text-transform: uppercase;
+}
+
+p.textlowercase {
+  text-transform: lowercase;
+}
+
+p.textcapitalize {
+  text-transform: capitalize;
+}
+
+p.textindent {
+  text-indent: 50px;
+}
+
+p.letterspacing {
+  letter-spacing: 3px;
+}
+
+p.lineheight {
+  line-height: 0.8;
+}
+
+p.direction{
+  direction: rtl;
+}
+
+p.wordspacing{
+  word-spacing: 10px;
+}
+
+p.wordshadow{
+  text-shadow: 3px 2px green;
+}
