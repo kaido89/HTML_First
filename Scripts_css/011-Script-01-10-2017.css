@@ -1,0 +1,34 @@
+p.family
+{
+  font-family: "Times New Roman",Times, serif;
+}
+
+p.normal
+{
+  font-style: normal;
+}
+
+p.italic
+{
+  font-style: italic;
+}
+
+p.oblique
+{
+  font-style: oblique;
+}
+
+p.size
+{
+  font-size: 20px;
+}
+
+p.bold
+{
+  font-weight: bold;
+}
+
+p.smallcaps
+{
+  font-variant: small-caps;
+}
