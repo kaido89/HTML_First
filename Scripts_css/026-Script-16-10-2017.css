@@ -1,0 +1,16 @@
+div{
+  background-color: green;
+  padding: 10px;
+}
+div.first{
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+div.second{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+div.third{
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
