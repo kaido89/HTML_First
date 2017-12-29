@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Creating and using an object method.</p>
+  <p>Store value</p>
+  <p id="kaido1"></p>
+  <script>
+    var person = {
+      firstname : "kaido",
+      lastname : "kaoru",
+      id : 1234,
+      fullName : function()
+      {
+        return this.firstname + " " + this.lastname;
+      }
+    };
+    document.getElementById("kaido1").innerHTML = person.fullName();
+  </script>
+</body>
+</html>
