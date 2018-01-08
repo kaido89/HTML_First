@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Day:</p>
+  <p id="kaido"></p>
+  <script>
+  var date, today, oneday;
+  today = new Date();
+  someday = new Date();
+  someday.setFullYear(2018,0,14);
+  if(someday > today)
+  {
+    date = "Today is before " + someday;
+  }
+  else {
+    date = "Today is after " + someday;
+  }
+  document.getElementById("kaido").innerHTML = date;
+  </script>
+</body>
+</html>
