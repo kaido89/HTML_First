@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Array [51 , 67, 84, 36]</p>
+  <p>Todos os Arrays:</p>
+  <p id="kaido"></p>
+  <button onclick="Functionkaido()">Click</button>
+  <script>
+  var array = [51 , 67, 84, 36];
+  document.getElementById("kaido").innerHTML = array;
+
+  function Functionkaido(){
+    array.sort();
+    document.getElementById("kaido").innerHTML = array;
+  }
+  </script>
+</body>
+</html>
