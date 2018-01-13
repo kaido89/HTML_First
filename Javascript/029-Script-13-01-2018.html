@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Javasript Comparison Age:</p>
+  <input id="age" value="19" />
+  <button onclick="Functionkaido()">Click</button>
+  <p id="kaido"></p>
+
+  <script>
+  function Functionkaido(){
+    var age, able;
+    age = Number(document.getElementById("age").value);
+    if(isNaN(age))
+    {
+      able = "You did not put a number";
+    }
+    else {
+      able = (age < 18) ? "Too young" : "Old enough";
+    }
+    document.getElementById("kaido").innerHTML = able;
+  }
+  </script>
+</body>
+</html>
