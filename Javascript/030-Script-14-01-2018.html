@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Date Time:</p>
+  <button onclick="Functionkaido()">Click</button>
+  <p id="kaido"></p>
+
+  <script>
+  function Functionkaido(){
+    var greet;
+    var time = new Date().getHours();
+    if(time<10)
+    {
+      greet = "Good Morning";
+    }
+    else  if (time<20) {
+      greet =  "Good Day";
+    }
+    else {
+      greet = "Good Evening";
+    }
+    document.getElementById("kaido").innerHTML = greet;
+  }
+  </script>
+</body>
+</html>
