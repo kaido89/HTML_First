@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="kaido"></p>
+
+  <script>
+  var text;
+  switch (new Date().getDay()) {
+    case 4:
+    case 5:
+      text = "Almost Weekend";
+      break;
+    case 0:
+    case 6:
+      text = "Weekend Wehhh";
+      break;
+    default:
+      text = "Wait for Weekend";
+  }
+
+    document.getElementById("kaido").innerHTML = text;
+  
+  </script>
+</body>
+</html>
