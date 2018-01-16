@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="kaido"></p>
+
+  <script>
+
+    var txt = "";
+    var person = {name: "kaido", surname: "kaoru", age: 28};
+    var i;
+    for (i in person)
+    {
+      txt += person[i] + " ";
+    }
+    document.getElementById("kaido").innerHTML = txt;
+
+  </script>
+</body>
+</html>
