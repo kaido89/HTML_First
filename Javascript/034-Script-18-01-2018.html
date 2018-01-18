@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>2nd Break in a while condition:</p>
+  <p id="kaido"></p>
+
+  <script>
+  var txt = "";
+   var person = ["kaido","kaoru","28"];
+   var i=0;
+   while (person[i])
+   {
+     txt += person[i] + " ";
+     if(i<1)
+     {i++;}
+     else
+     {break;}
+
+   }
+   document.getElementById("kaido").innerHTML = txt;
+  </script>
+</body>
+</html>
