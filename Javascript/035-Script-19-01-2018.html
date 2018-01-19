@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Conversion of types "6"+null:</p>
+  <p id="kaido1"></p>
+  <p>Conversion of types 6+null:</p>
+  <p id="kaido2"></p>
+  <p>Conversion of types "6"+3:</p>
+  <p id="kaido3"></p>
+  <p>Conversion of types "6"-3:</p>
+  <p id="kaido4"></p>
+  <p>Conversion of types "6"*"3":</p>
+  <p id="kaido5"></p>
+  <p>Conversion of types "6"/"3":</p>
+  <p id="kaido6"></p>
+  <script>
+   document.getElementById("kaido1").innerHTML = "6"+null;
+   document.getElementById("kaido2").innerHTML = 6+null;
+   document.getElementById("kaido3").innerHTML = "6"+"3";
+   document.getElementById("kaido4").innerHTML = "6"-"3";
+   document.getElementById("kaido5").innerHTML = "6"*"3";
+   document.getElementById("kaido6").innerHTML = "6"/"3";
+  </script>
+</body>
+</html>
