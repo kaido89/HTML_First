@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Search for an "e" in the next paragraph and replace with "ih":</p>
+
+  <p id="kaido">News text is always interesting</p>
+  <button onclick="myfunction()">Click</button>
+  <script>
+    function myfunction(){
+      var str=document.getElementById("kaido").innerHTML;
+      var txt= str.replace("e","ih");
+      document.getElementById("kaido").innerHTML=txt;
+    }
+  </script>
+</body>
+</html>
