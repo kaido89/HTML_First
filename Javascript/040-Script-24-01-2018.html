@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Not Hoisting x:</p>
+  <p id="kaido"></p>
+  <p>Hoisting x:</p>
+  <p id="kaido2"></p>
+  <script>
+  var x;
+  xav = document.getElementById("kaido");
+  xav.innerHTML=x;
+  x = 20 * 1;
+  xavs = document.getElementById("kaido2");
+  xavs.innerHTML=x;
+  </script>
+</body>
+</html>
