@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Javascript validate Input</h2>
+  <p>put Number 1-10:</p>
+  <input id="num">
+
+  <button type="button" onclick="myfunction()">Submit</button>
+  <p id="kaido"></p>
+  <script>
+    function myfunction()
+    {
+      var x, text;
+      x=document.getElementById("num").value;
+      if(isNaN(x) || x < 1 || x > 10)
+      {
+        text="Input not valid";
+      } else {
+        text="Input Ok";
+      }
+        document.getElementById("kaido").innerHTML=text;
+    }
+
+  </script>
+</body>
+</html>
