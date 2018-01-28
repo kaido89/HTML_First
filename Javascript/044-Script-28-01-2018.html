@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>If lower than 150 show error message:</h2>
+  <input id="kaido1" type="number" min="100">
+  <button onclick="functionkaido()">Ok</button>
+  <p id="kaido2"></p>
+  <script>
+    function functionkaido()
+    {
+      var txt="";
+      if(document.getElementById("kaido1").validity.rangeUnderflow){
+        txt ="value too small";
+      }
+      else{
+        txt="Input Ok";
+      }
+      document.getElementById("kaido2").innerHTML = txt;
+    }
+  </script>
+</body>
+</html>
