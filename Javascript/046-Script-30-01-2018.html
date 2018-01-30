@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="kaido"></p>
+  <script>
+    function Game(name, year, company, score){
+      this.names=name;
+      this.years=year;
+      this.companys=company;
+      this.scores=score;
+    }
+    Game.prototype.name = function(){
+      return this.names + " and with a score of " + this.scores
+    };
+
+    var games = new Game("GTA V", "2016", "Rockstar", "98");
+    document.getElementById("kaido").innerHTML= "My favourite game is " + games.name();
+   </script>
+</body>
+</html>
