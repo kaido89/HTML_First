@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Sum of All method:</h2>
+  <p>(1, 2, 42, 53, 643, 234) = </p>
+  <p id="kaido1"></p>
+  <script>
+    function functionkaido ()
+    {
+      var i;
+      var sum = 0;
+      for(i = 0; i < arguments.length; i++)
+      {
+        sum += arguments[i];
+      }
+      return sum;
+    }
+    document.getElementById("kaido1").innerHTML=functionkaido(1,2,42,53,643, 234);
+  </script>
+</body>
+</html>
