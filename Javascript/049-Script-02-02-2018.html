@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Invocation Function:</h2>
+  <p>Firstname = Kaido, Lastname = Kaoru</p>
+  <p id="kaido1"></p>
+  <script>
+    function functionkaido ( arg1, arg2)
+    {
+      this.firstname = arg1;
+      this.lastname = arg2;
+    }
+    var x = new functionkaido ("kaido","kaoru")
+    document.getElementById("kaido1").innerHTML=x.firstname;
+  </script>
+</body>
+</html>
