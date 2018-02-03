@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Call() method:</h2>
+  <p id="kaido1"></p>
+  <script>
+    var person = {
+      firstname: "kaido",
+      lastname: "Kaoru",
+      fullname: function(){
+        return this.firstname + " " + this.lastname;
+      }
+    }
+    var secondperson = {
+      firstname: "John",
+      lastname: "Cena",
+    }
+    x = person.fullname.call(secondperson);
+    document.getElementById("kaido1").innerHTML=x;
+  </script>
+</body>
+</html>
