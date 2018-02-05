@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Counting with local variable:</h2>
+  <button type="button" onclick="kaidofunction()">Count!</button>
+  <p id="kaido"></p>
+  <script>
+    var add = (function()
+    {
+      var counter = 0;
+      return function(){
+        return counter += 1;
+      }
+    })();
+    function kaidofunction(){
+      document.getElementById("kaido").innerHTML = add();
+    }
+
+  </script>
+</body>
+</html>
